@@ -1,0 +1,22 @@
+# Salin file ini menjadi `.dev.vars` untuk development lokal dengan Wrangler / Vite
+# Jangan pernah commit `.dev.vars` ke repository git!
+
+# Google OAuth Credentials (https://console.cloud.google.com/apis/credentials)
+# Authorized redirect URI lokal: http://localhost:5173/auth/callback/google
+GOOGLE_CLIENT_ID=your-google-client-id.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+
+# Secret minimal 32 karakter acak untuk menandatangani Stateless JWT (HS256)
+# Contoh generate: openssl rand -base64 32
+JWT_SECRET=ganti-dengan-secret-acak-minimal-32-karakter-di-sini
+
+# Base URL aplikasi (wajib sesuai origin saat OAuth callback)
+APP_URL=http://localhost:5173
+
+# Opsional: set "true" HANYA saat dev lokal jika ingin menguji alur penjual tanpa Google OAuth
+# (Otomatis nonaktif di build produksi)
+ENABLE_DEV_LOGIN=false
+
+# Daftar email admin panel moderasi, dipisah koma (harus sama dengan email akun Google)
+# Kosongkan untuk menonaktifkan akses panel admin
+ADMIN_EMAILS=admin@example.com

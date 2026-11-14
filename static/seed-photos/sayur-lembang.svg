@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" fill="none">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="640" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCFCE7"/>
+      <stop offset="1" stop-color="#86EFAC"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg1)"/>
+  <circle cx="320" cy="240" r="140" fill="#16A34A" opacity="0.16"/>
+  <path d="M225 275c0-68 55-123 123-123 48 0 88 26 108 66-26 68-86 112-158 112-30 0-54-22-73-55Z" fill="#15803D"/>
+  <path d="M190 250c0-48 40-88 88-88 32 0 61 17 77 43-22 50-67 84-118 84-22 0-37-16-47-39Z" fill="#22C55E"/>
+  <path d="M250 285c42-22 92-54 134-102" stroke="#BBF7D0" stroke-width="10" stroke-linecap="round"/>
+  <text x="320" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#14532D">Sayur Segar Kebun Lembang</text>
+</svg>
+

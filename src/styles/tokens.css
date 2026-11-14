@@ -1,0 +1,85 @@
+/* Hallmark: v2.0.0 | genre: modern-minimal | theme: custom (whatsapp-tani) | scope: app | axes: light/grotesk-sans/chromatic-emerald | redesign: restyle (login, onboarding, primitives) */
+/* critique: warm WhatsApp parchment paper, crisp white bubble cards, deep teal header, 1.75px SVG icons without emojis or gradients */
+
+:root {
+	/* Surfaces (WhatsApp-inspired warm parchment + crisp white bubbles) */
+	--color-paper: oklch(93.8% 0.014 82);
+	--color-paper-2: oklch(100% 0 0);
+	--color-paper-3: oklch(97.2% 0.006 85);
+	/* Matte that flattens transparent photo pixels before WebP/JPEG encoding.
+	   Kept in plain sRGB because canvas fillStyle reads it on older Android WebViews. */
+	--color-photo-matte: rgb(255 255 255);
+
+	/* Ink & Rules */
+	--color-ink: oklch(19.5% 0.018 205);
+	--color-ink-2: oklch(37.5% 0.018 205);
+	--color-muted: oklch(50.5% 0.016 205);
+	--color-rule: oklch(92.5% 0.007 205);
+	--color-rule-strong: oklch(84% 0.012 205);
+
+	/* Brand & Action Accents */
+	--color-accent: oklch(51.5% 0.118 168);
+	--color-accent-hover: oklch(44.5% 0.105 168);
+	--color-accent-active: oklch(38.5% 0.092 168);
+	--color-accent-ink: oklch(100% 0 0);
+
+	--color-wa: oklch(54% 0.155 154);
+	--color-wa-hover: oklch(48% 0.145 154);
+	--color-wa-active: oklch(42% 0.132 154);
+	--color-wa-ink: oklch(100% 0 0);
+
+	--color-danger: oklch(47.5% 0.175 27);
+	--color-danger-hover: oklch(41% 0.16 27);
+	--color-danger-active: oklch(36% 0.145 27);
+	--color-danger-ink: oklch(100% 0 0);
+
+	--color-bubble: oklch(95.5% 0.065 142);
+	--color-bubble-border: oklch(78% 0.11 150);
+	--color-bubble-ink: oklch(24% 0.05 160);
+
+	--color-highlight: oklch(88% 0.145 92);
+	--color-highlight-hover: oklch(83% 0.155 92);
+	--color-highlight-ink: oklch(19.5% 0.018 205);
+
+	--color-info-bg: oklch(94.5% 0.025 235);
+	--color-info-ink: oklch(36% 0.09 240);
+	--color-info-border: oklch(80% 0.055 235);
+
+	--color-warn-bg: oklch(96.5% 0.045 92);
+	--color-warn-ink: oklch(37% 0.075 72);
+	--color-warn-border: oklch(80% 0.12 88);
+
+	--color-error-bg: oklch(95.5% 0.028 27);
+	--color-error-ink: oklch(38% 0.14 27);
+	--color-error-border: oklch(79% 0.115 27);
+
+	--color-focus: oklch(51.5% 0.118 168);
+
+	/* Map marker hues: the one place the system carries more than one hue, used to
+	   code harvest categories on the pins. Roles are reused where a palette hue fits. */
+	--color-cat-sayur: var(--color-accent);
+	--color-cat-beras: var(--color-warn-ink);
+	--color-cat-buah: var(--color-danger);
+	--color-cat-umbi: oklch(52% 0.135 55);
+	--color-cat-laut: var(--color-info-ink);
+	--color-cat-olahan: oklch(50% 0.13 330);
+	--color-cat-lainnya: var(--color-ink-2);
+
+	/* Typography (WhatsApp native sans stack) */
+	--font-display: 'Helvetica Neue', 'Segoe UI', Roboto, 'Noto Sans', system-ui, -apple-system, sans-serif;
+	--font-body: 'Helvetica Neue', 'Segoe UI', Roboto, 'Noto Sans', system-ui, -apple-system, sans-serif;
+	--font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+	/* Radii, Borders & Elevation */
+	--radius-card: 12px;
+	--radius-control: 10px;
+	--radius-pill: 9999px;
+	--rule-hair: 1px;
+	--shadow-card: 0 1px 1px oklch(19.5% 0.018 205 / 0.08);
+	--shadow-popup: 0 12px 28px oklch(19.5% 0.018 205 / 0.18);
+	--shadow-pin: 0 4px 12px oklch(19.5% 0.018 205 / 0.28);
+
+	/* Motion */
+	--ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+	--dur-fast: 150ms;
+}

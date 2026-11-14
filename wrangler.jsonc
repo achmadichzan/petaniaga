@@ -1,0 +1,26 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "petaniaga",
+	"compatibility_date": "2026-11-13",
+	"compatibility_flags": [
+		"nodejs_als"
+	],
+	"pages_build_output_dir": ".svelte-kit/cloudflare",
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "petaniaga-db",
+			"database_id": "d645ab2a-9a69-4842-95cd-d32c1398882c",
+			"migrations_dir": "migrations"
+		}
+	],
+	"r2_buckets": [
+		{
+			"binding": "R2_BUCKET",
+			"bucket_name": "petaniaga-images"
+		}
+	],
+	"ai": {
+		"binding": "AI"
+	}
+}
